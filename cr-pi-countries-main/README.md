@@ -181,7 +181,7 @@ Tu servidor deberá contar con las siguientes rutas:
 
 -  Obtiene un arreglo de objetos, donde cada objeto es un país con toda su información.
 
-#### **📍 GET | /countries/:idPais**
+#### **📍 GET | /countries/:getCountryName**
 
 -  Esta ruta obtiene el detalle de un país específico. Es decir que devuelve un objeto con la información pedida en el detalle de un país.
 -  El país es recibido por parámetro (ID de tres letras del país).

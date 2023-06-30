@@ -5,9 +5,10 @@ module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define("Country", {
     id: {
-      type: DataTypes.UUID,
+      type: DataTypes.STRING(3),
+      allowNull: false,
       primaryKey: true,
-      defaultValue: DataTypes.UUIDV4,
+      unique: true,
     },
     name: {
       type: DataTypes.STRING,
@@ -37,7 +38,7 @@ module.exports = (sequelize) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    create: {
+    createAt: {
       type: DataTypes.BOOLEAN,
       defaultValue: true,
     },
