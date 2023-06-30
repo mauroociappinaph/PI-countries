@@ -3,6 +3,7 @@ const {
   getActivities,
   postActivity,
 } = require("../handlers/handlersActivities");
+
 const { validatePostActivity } = require("../middleware/activitiesvalidate");
 
 const activitiesRouter = Router();
